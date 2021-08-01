@@ -1,0 +1,43 @@
+.comentarios{
+    width:95%;
+    .comentario{
+        border:1px solid gray;
+        border-radius: 5px;
+        h3{
+            text-decoration:underline;
+            font-size:20px;
+            color:gray;
+        }
+        h5{
+            font-size:12px;
+            float:right;
+            display:inline;
+        }
+        p{
+            margin:0;
+            display:inline;
+        }
+    }
+    #formularioComentario{
+        h2{
+            color:gray;
+        }
+        .input-group{
+            margin:15px 0;
+            border-radius: 10px;
+            z-index: 0;
+            .nombre{
+                margin:0 1px;
+            }
+            textarea{
+                min-height:100px;
+            }
+        }
+        .input-group-text{
+            background:$logo;
+        }
+        .form-control{
+            background:#EDE6D9;
+        }
+    }
+}

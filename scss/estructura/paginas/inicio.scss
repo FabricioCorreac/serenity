@@ -1,0 +1,102 @@
+#gridInicio{
+    margin-bottom: 60px;
+    width:100%;
+    display:grid;
+    grid-template-areas:
+    "frase"
+    "columnaIzquierda"
+    "columnaDerecha";
+    justify-items: center;
+    #frase {
+        grid-area:frase;
+        margin-top:45px;
+        width:95%;
+        height:200px;
+        border-radius:10px;
+        background-image:url(https://images.pexels.com/photos/312839/pexels-photo-312839.jpeg?cs=srgb&dl=pexels-nandhu-kumar-312839.jpg&fm=jpg);
+        background-size:100% 100%;
+        .overlay{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:100%;
+            height:100%;
+            border-radius:10px;
+            background: rgba(0,0,0,0.2);
+            h2{
+                color:white;
+                text-align: center;
+                font-size:16px;
+                letter-spacing:2px;
+                font-weight:bold;
+            }
+        }
+    }
+    .columna{
+        width:90%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:10px;
+        p{
+            margin-bottom:5px;
+            text-align: center;
+        }
+        .boton{
+            background: $logo;
+            border-radius:20px;
+            border:5px solid $logo;
+            transform:scale(1);
+		    transition:transform 0.1s;
+            &:hover{
+                transform:scale(1.1);
+	        	transition:transform 0.2s;
+
+            }
+            a{
+                color:white;
+            }
+        }
+    }
+    #columnaIzquierda{
+        grid-area:columnaIzquierda;
+    }
+    #columnaDerecha{
+        grid-area:columnaDerecha;
+    }
+}
+@media(min-width:768px){
+    #gridInicio{
+        grid-template-areas:"frase frase"
+        "columnaIzquierda columnaDerecha";
+        #frase{
+            height:300px;
+            .overlay{
+                h2{
+                font-size: 22px;
+                }
+            }
+        }
+        p{
+            font-size:18px;
+        }
+    }
+}
+@media(min-width:992px){
+    #gridInicio{
+       #frase{
+            .overlay{
+                h2{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+@media(min-width:1200px){
+    #gridInicio{
+        #frase{
+            height:450px;
+        }
+    }
+}

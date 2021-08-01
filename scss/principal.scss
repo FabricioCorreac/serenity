@@ -1,0 +1,18 @@
+@import 'bases/colores.scss';
+@import 'bases/fuentes.scss';
+@import 'estructura/header.scss';
+@import 'estructura/footer.scss';
+@import 'estructura/main.scss';
+@import 'estructura/paginas/inicio.scss';
+@import 'estructura/paginas/servicio.scss';
+@import 'estructura/paginas/comentarios.scss';
+@import 'estructura/paginas/contacto.scss';
+@import 'estructura/paginas/acerca_de_mi.scss';
+body{
+    background:$fondo;
+    max-width: 100vw;   
+}
+
+.titulo {
+    color:$titulos;
+}

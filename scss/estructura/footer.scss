@@ -1,4 +1,4 @@
-footer{
+.footer{
     display:flex;
     position:fixed;
     bottom:0px;
@@ -7,11 +7,16 @@ footer{
     background: $footer;
     border-top: 1px solid gray;
     flex-direction:row-reverse;
-    a{
+    &__link{
         margin:0px 7px;
         height:100%;
-        img{
-            height:100%;
+    }
+    &__img{
+        height:45px;
+        transition: height 0.1s;
+        &:hover{
+            height:50px;
+            transition: height 0.1s;
         }
     }
 }

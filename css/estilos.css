@@ -46,8 +46,14 @@ a {
   .header__link {
     padding: 4px;
     color: gray; }
+    .header__link:hover {
+      color: gray;
+      filter: saturate(1.2); }
     .header__link--active {
       color: #333333; }
+      .header__link--active:hover {
+        color: #333333;
+        filter: saturate(1.2); }
 
 @media (min-width: 992px) {
   header nav #navbarNavDropdown {
@@ -63,7 +69,7 @@ a {
   header nav .nav-link {
     font-size: 22px; } }
 
-footer {
+.footer {
   display: flex;
   position: fixed;
   bottom: 0px;
@@ -72,11 +78,15 @@ footer {
   background: linear-gradient(130deg, #f7e6d9, #F4D2B8);
   border-top: 1px solid gray;
   flex-direction: row-reverse; }
-  footer a {
+  .footer__link {
     margin: 0px 7px;
     height: 100%; }
-    footer a img {
-      height: 100%; }
+  .footer__img {
+    height: 45px;
+    transition: height 0.1s; }
+    .footer__img:hover {
+      height: 50px;
+      transition: height 0.1s; }
 
 main {
   display: flex;
@@ -85,13 +95,13 @@ main {
   max-width: 100vw;
   margin-bottom: 50px; }
 
-#gridInicio {
+.inicio {
   margin-bottom: 60px;
   width: 100%;
   display: grid;
   grid-template-areas: "frase" "columnaIzquierda" "columnaDerecha";
   justify-items: center; }
-  #gridInicio #frase {
+  .inicio__imagen {
     grid-area: frase;
     margin-top: 45px;
     width: 95%;
@@ -99,62 +109,78 @@ main {
     border-radius: 10px;
     background-image: url(https://images.pexels.com/photos/312839/pexels-photo-312839.jpeg?cs=srgb&dl=pexels-nandhu-kumar-312839.jpg&fm=jpg);
     background-size: 100% 100%; }
-    #gridInicio #frase .overlay {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-      background: rgba(0, 0, 0, 0.2); }
-      #gridInicio #frase .overlay h2 {
-        color: white;
-        text-align: center;
-        font-size: 16px;
-        letter-spacing: 2px;
-        font-weight: bold; }
-  #gridInicio .columna {
+  .inicio__overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2); }
+  .inicio__frase {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold; }
+  .inicio__card {
+    border-radius: 10px;
+    background: radial-gradient(#f7e6d9, #F4D2B8);
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px; }
-    #gridInicio .columna p {
-      margin-bottom: 5px;
-      text-align: center; }
-    #gridInicio .columna .boton {
-      background: #71B7A6;
-      border-radius: 20px;
-      border: 5px solid #71B7A6;
-      transform: scale(1);
-      transition: transform 0.1s; }
-      #gridInicio .columna .boton:hover {
-        transform: scale(1.1);
-        transition: transform 0.2s; }
-      #gridInicio .columna .boton a {
-        color: white; }
-  #gridInicio #columnaIzquierda {
+    margin-top: 10px;
+    padding-bottom: 10px; }
+  .inicio__texto {
+    margin-bottom: 5px;
+    text-align: center; }
+  .inicio__boton {
+    width: 285px;
+    text-align: center;
+    color: #f7e6d9;
+    background: #7E793A;
+    border-radius: 20px;
+    border: 5px solid #7E793A;
+    transform: scale(1);
+    transition: transform 0.1s; }
+    .inicio__boton:hover {
+      color: white;
+      filter: saturate(1.2);
+      transform: scale(1.1);
+      transition: transform 0.2s; }
+  .inicio__card--izquierda {
     grid-area: columnaIzquierda; }
-  #gridInicio #columnaDerecha {
+  .iniciocard__derecha {
     grid-area: columnaDerecha; }
 
+@media (min-width: 480px) {
+  .inicio__boton {
+    width: 400px; } }
+
 @media (min-width: 768px) {
-  #gridInicio {
+  .inicio {
     grid-template-areas: "frase frase" "columnaIzquierda columnaDerecha"; }
-    #gridInicio #frase {
+    .inicio__imagen {
       height: 300px; }
-      #gridInicio #frase .overlay h2 {
-        font-size: 22px; }
-    #gridInicio p {
-      font-size: 18px; } }
+    .inicio__frase {
+      font-size: 22px; }
+    .inicio__texto {
+      font-size: 18px; }
+    .inicio__boton {
+      width: 330px; } }
 
 @media (min-width: 992px) {
-  #gridInicio #frase .overlay h2 {
-    font-size: 28px; } }
+  .inicio__frase {
+    font-size: 28px; }
+  .inicio__boton {
+    width: 440px; } }
 
 @media (min-width: 1200px) {
-  #gridInicio #frase {
-    height: 450px; } }
+  .inicio__imagen {
+    height: 450px; }
+  .inicio__boton {
+    width: 520px; } }
 
 table {
   width: 95%;

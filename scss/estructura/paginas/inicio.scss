@@ -1,4 +1,4 @@
-#gridInicio{
+.inicio{
     margin-bottom: 60px;
     width:100%;
     display:grid;
@@ -7,7 +7,7 @@
     "columnaIzquierda"
     "columnaDerecha";
     justify-items: center;
-    #frase {
+    &__imagen{
         grid-area:frase;
         margin-top:45px;
         width:95%;
@@ -15,88 +15,101 @@
         border-radius:10px;
         background-image:url(https://images.pexels.com/photos/312839/pexels-photo-312839.jpeg?cs=srgb&dl=pexels-nandhu-kumar-312839.jpg&fm=jpg);
         background-size:100% 100%;
-        .overlay{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width:100%;
-            height:100%;
-            border-radius:10px;
-            background: rgba(0,0,0,0.2);
-            h2{
-                color:white;
-                text-align: center;
-                font-size:16px;
-                letter-spacing:2px;
-                font-weight:bold;
-            }
-        }
     }
-    .columna{
+    &__overlay{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height:100%;
+        border-radius:10px;
+        background: rgba(0,0,0,0.2);
+    }
+    &__frase{
+        color:white;
+        text-align: center;
+        font-size:16px;
+        letter-spacing:2px;
+        font-weight:bold;
+    }
+    &__card{
+        border-radius: 10px;
+        background: radial-gradient($header-abajo,$header-arriba);
         width:90%;
         display:flex;
         flex-direction: column;
         align-items: center;
         margin-top:10px;
-        p{
-            margin-bottom:5px;
-            text-align: center;
-        }
-        .boton{
-            background: $logo;
-            border-radius:20px;
-            border:5px solid $logo;
-            transform:scale(1);
-		    transition:transform 0.1s;
-            &:hover{
-                transform:scale(1.1);
-	        	transition:transform 0.2s;
+        padding-bottom:10px;
+    }
+    &__texto{
+        margin-bottom:5px;
+        text-align: center;
+    }
+    &__boton{
+        width:285px;
+        text-align: center;
+        color:$header-abajo;
+        background: $letra;
+        border-radius:20px;
+        border:5px solid $letra;
+        transform:scale(1);
+        transition:transform 0.1s;
+        &:hover{
+            color:white;
+            filter:saturate(1.2);
+            transform:scale(1.1);
+            transition:transform 0.2s;
 
-            }
-            a{
-                color:white;
-            }
         }
     }
-    #columnaIzquierda{
+    &__card--izquierda{
         grid-area:columnaIzquierda;
     }
-    #columnaDerecha{
+    &card__derecha{
         grid-area:columnaDerecha;
     }
 }
+@media(min-width:480px){
+    .inicio__boton{
+        width:400px;
+    }
+}
 @media(min-width:768px){
-    #gridInicio{
+    .inicio{
         grid-template-areas:"frase frase"
         "columnaIzquierda columnaDerecha";
-        #frase{
+        &__imagen{
             height:300px;
-            .overlay{
-                h2{
-                font-size: 22px;
-                }
-            }
         }
-        p{
+        &__frase{
+            font-size: 22px;
+        }
+        &__texto{
             font-size:18px;
+        }
+        &__boton{
+            width:330px;
         }
     }
 }
 @media(min-width:992px){
-    #gridInicio{
-       #frase{
-            .overlay{
-                h2{
-                    font-size: 28px;
-                }
-            }
+    .inicio{
+        &__frase{
+           font-size: 28px;
+        }
+        &__boton{
+            width:440px;
         }
     }
 }
 @media(min-width:1200px){
-    #gridInicio{
-        #frase{
+    .inicio{
+        &__imagen{
             height:450px;
+        }
+        &__boton{
+            width:520px;
         }
     }
 }

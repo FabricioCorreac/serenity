@@ -43,8 +43,16 @@
     &__link{
         padding:4px;
         color:gray;
+        &:hover{
+            color:gray;
+            filter:saturate(1.2);
+        }
         &--active{
             color:#333333;
+            &:hover{
+                color:#333333;
+                filter:saturate(1.2);
+            }
         }
     }  
  

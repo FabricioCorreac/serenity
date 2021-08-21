@@ -40,40 +40,42 @@
 					</ul>
 					</div>
 				</div>
-				</nav>
+			</nav>
 		</header>
 		<!--Fin header-->
 				
 
 		<!--Inicio contenido principal-->
+		<!--Inicio sección de comentarios-->
 		<main>
-		 	<div class="titulo">
-			 	<h1>Opiniones sobre el servicio</h1>
-		 	</div>
-		 	<div class="comentarios">
-		 		<div class="comentario">
-		 			<img src="https://img.icons8.com/ios-glyphs/30/000000/test-account.png"/>
-		 			<h3>Nombre</h3>
-		 			<p>Comentario</p>
-		 			<h5>Fecha</h5>
-		 		</div>
-		 		<div id="formularioComentario">
-		 			<h2>Dejar un comentario</h2>
-		 			<form>
-						<div class="input-group">
-							<span class="input-group-text">Nombre y apellido</span>
-							<input type="text" name="nombre" aria-label="Nombre" class="form-control nombre">
-							<input type="text" name="apellido" aria-label="Apellido" class="form-control nombre">
-						</div>
-						<div class="input-group">
-							<span class="input-group-text">Deja tu comentario</span>
-							<textarea class="form-control" name="mensaje" aria-label="Deja tu comentario"></textarea>
-						</div>
-						<input type="submit">
-		 			</form>
-		 		</div>
-		 	</div>
+			<section class="comentarios">
+				<h1 class="comentarios__titulo">Opiniones sobre el servicio</h1>
+				<h2 class="comentarios__sin-comentarios">Aún no hay comentarios, sé el primero en dejar uno.</h2>	
+				<div class="comentarios__comentario">
+					<h3 class="comentarios__nombre">Nombre</h3>
+					<p class="comentarios__mensaje">Mensaje</p>
+					<span class="comentarios__fecha">Fecha</span>
+				</div>
+			</section>
+			<!--Fin sección de comentarios-->
+			<!--Inicio formulario de comentarios-->
+			<section class="formulario-comentarios">
+				<h2 class="formulario-comentarios__titulo">Dejar un comentario</h2>
+				<form class="formulario-comentarios__formulario">
+					<div class="formulario-comentarios__casillero input-group">
+						<span class="input-group-text formulario-comentarios__etiqueta">Nombre y apellido</span>
+						<input type="text" name="nombre" aria-label="Nombre" class="form-control formulario-comentarios__nombre">
+						<input type="text" name="apellido" aria-label="Apellido" class="form-control formulario-comentarios__apellido">
+					</div>
+					<div class="formulario-comentarios__casillero input-group">
+						<span class="input-group-text formulario-comentarios__etiqueta">Deja tu comentario</span>
+						<textarea class="form-control formulario-comentarios__campo" name="mensaje" aria-label="Deja tu comentario"></textarea>
+					</div>
+					<input class="formulario_comentarios__enviar"type="submit">
+				</form>
+			<section>
 		</main>
+		<!--Fin formulario de comentarios-->
 		<!--Fin contenido principal-->
 
 

@@ -1,43 +1,66 @@
 .comentarios{
-    width:95%;
-    .comentario{
+    width: 95%;
+    &__sin-comentarios{
+        font-size: 20px;
+    }
+    &__comentario{ //Así sería un comentario.
+        padding:5px;
+        overflow: scroll;
+        width:100%;
         border:1px solid gray;
         border-radius: 5px;
-        h3{
-            text-decoration:underline;
-            font-size:20px;
-            color:gray;
-        }
-        h5{
-            font-size:12px;
-            float:right;
-            display:inline;
-        }
-        p{
-            margin:0;
-            display:inline;
-        }
+        display:none; //Cambiar esto a display:block para ver el comentario
     }
-    #formularioComentario{
-        h2{
-            color:gray;
-        }
-        .input-group{
-            margin:15px 0;
-            border-radius: 10px;
-            z-index: 0;
-            .nombre{
-                margin:0 1px;
-            }
-            textarea{
-                min-height:100px;
-            }
-        }
-        .input-group-text{
-            background:$logo;
-        }
-        .form-control{
-            background:#EDE6D9;
-        }
+    &__nombre{
+        font-size:20px;
+        color:$letra;
+    }
+    &__fecha{
+        font-size:12px;
+        color:$letra;
+        float:right;
+        display:inline;
+    }
+    &__mensaje{
+        max-width:100%;
+        display: inline-block;
+        margin:0;
+        display:inline;
+    }
+}
+.formulario-comentarios{
+    width:95%;
+    margin-top:20px;
+    padding-top: 5px;
+    padding:10px;
+    border-radius: 15px;
+    background: radial-gradient($header-abajo,$header-arriba);
+    &__titulo{
+        color:gray;
+    }
+   &__casillero{
+        border-radius: 15px;
+        margin:15px 0;
+        border-radius: 10px;
+        z-index: 0;
+    }
+    &__nombre{
+        background:#EDE6D9;
+        border-radius: 15px;
+        margin:0 1px;
+    }
+    &__apellido{
+        background:#EDE6D9;
+        border-radius: 15px;
+        margin:0 1px;
+    }
+    &__campo{
+        border-radius: 15px;
+        background:#EDE6D9;
+        min-height:100px;
+    }
+    &__etiqueta{
+        border-radius: 15px;
+        background:$logo;
     }
 }

@@ -210,34 +210,58 @@ table {
 
 .comentarios {
   width: 95%; }
-  .comentarios .comentario {
+  .comentarios__sin-comentarios {
+    font-size: 20px; }
+  .comentarios__comentario {
+    padding: 5px;
+    overflow: scroll;
+    width: 100%;
     border: 1px solid gray;
-    border-radius: 5px; }
-    .comentarios .comentario h3 {
-      text-decoration: underline;
-      font-size: 20px;
-      color: gray; }
-    .comentarios .comentario h5 {
-      font-size: 12px;
-      float: right;
-      display: inline; }
-    .comentarios .comentario p {
-      margin: 0;
-      display: inline; }
-  .comentarios #formularioComentario h2 {
+    border-radius: 5px;
+    display: none; }
+  .comentarios__nombre {
+    font-size: 20px;
+    color: #7E793A; }
+  .comentarios__fecha {
+    font-size: 12px;
+    color: #7E793A;
+    float: right;
+    display: inline; }
+  .comentarios__mensaje {
+    max-width: 100%;
+    display: inline-block;
+    margin: 0;
+    display: inline; }
+
+.formulario-comentarios {
+  width: 95%;
+  margin-top: 20px;
+  padding-top: 5px;
+  padding: 10px;
+  border-radius: 15px;
+  background: radial-gradient(#f7e6d9, #F4D2B8); }
+  .formulario-comentarios__titulo {
     color: gray; }
-  .comentarios #formularioComentario .input-group {
+  .formulario-comentarios__casillero {
+    border-radius: 15px;
     margin: 15px 0;
     border-radius: 10px;
     z-index: 0; }
-    .comentarios #formularioComentario .input-group .nombre {
-      margin: 0 1px; }
-    .comentarios #formularioComentario .input-group textarea {
-      min-height: 100px; }
-  .comentarios #formularioComentario .input-group-text {
+  .formulario-comentarios__nombre {
+    background: #EDE6D9;
+    border-radius: 15px;
+    margin: 0 1px; }
+  .formulario-comentarios__apellido {
+    background: #EDE6D9;
+    border-radius: 15px;
+    margin: 0 1px; }
+  .formulario-comentarios__campo {
+    border-radius: 15px;
+    background: #EDE6D9;
+    min-height: 100px; }
+  .formulario-comentarios__etiqueta {
+    border-radius: 15px;
     background: #71B7A6; }
-  .comentarios #formularioComentario .form-control {
-    background: #EDE6D9; }
 
 #formularioContacto .input-group {
   margin: 15px 0;

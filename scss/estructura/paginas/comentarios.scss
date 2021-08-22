@@ -1,5 +1,8 @@
 .comentarios{
     width: 95%;
+    &__titulo{
+        text-align: center;
+    }
     &__sin-comentarios{
         font-size: 20px;
     }
@@ -31,7 +34,6 @@
 .formulario-comentarios{
     width:95%;
     margin-top:20px;
-    padding-top: 5px;
     padding:10px;
     border-radius: 15px;
     background: radial-gradient($header-abajo,$header-arriba);

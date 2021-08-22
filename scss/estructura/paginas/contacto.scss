@@ -1,7 +1,16 @@
-#formularioContacto{
-    .input-group{
+.contacto{
+    &__formulario{
+        width:95%;
+        border-radius: 15px;
+        padding:10px;
+        background: radial-gradient($header-abajo,$header-arriba);
+    }
+    &__saludo{
+        color:gray;
+    }
+    &__input{
         margin:15px 0;
-        border-radius: 10px;
+        border-radius: 15px;
         z-index: 0;
         .nombre{
             margin:0 1px;
@@ -10,10 +19,12 @@
             min-height:100px;
         }
     }
-    .input-group-text{
+    &__etiqueta{
+        border-radius:15px;
         background:$logo;
     }
-    .form-control{
+    &__campo{
+        border-radius: 15px;
         background:#EDE6D9;
     }
 }

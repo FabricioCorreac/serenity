@@ -45,21 +45,18 @@
 				
 
 		<!--Inicio formulario-->
-		<main>
-			<div  class="titulo">
-				<h1>Contacto</h1>
-			</div>
-			<div id="formularioContacto">
-				<p>Deja un mensaje y me comunicaré contigo lo antes posible.</p>
-				<form>
-					<div class="input-group">
-						<span class="input-group-text">Nombre y apellido</span>
-						<input type="text" name="nombre" aria-label="Nombre" class="form-control nombre">
-						<input type="text" name="apellido" aria-label="Apellido" class="form-control nombre">
+		<main class="contacto">
+			<h1 class="contacto__titulo">Contacto</h1>
+			<form class="contacto__formulario">
+					<p class="contacto__saludo">Deja un mensaje y me comunicaré contigo lo antes posible.</p>
+					<div class="input-group contacto__input">
+						<span class="input-group-text contacto__etiqueta">Nombre y apellido</span>
+						<input type="text" name="nombre" aria-label="Nombre" class="form-control contacto__campo">
+						<input type="text" name="apellido" aria-label="Apellido" class="form-control contacto__campo">
 					</div>
-					<div class="input-group">
-						<span class="input-group-text">Deja tu comentario</span>
-						<textarea class="form-control" name="mensaje" aria-label="Deja tu comentario"></textarea>
+					<div class="input-group contacto__input">
+						<span class="input-group-text contacto__etiqueta">Deja tu mensaje</span>
+						<textarea class="form-control contacto__campo" name="mensaje" aria-label="Deja tu comentario"></textarea>
 					</div>
 					<input type="submit">
 				</form>

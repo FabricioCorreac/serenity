@@ -210,6 +210,8 @@ table {
 
 .comentarios {
   width: 95%; }
+  .comentarios__titulo {
+    text-align: center; }
   .comentarios__sin-comentarios {
     font-size: 20px; }
   .comentarios__comentario {
@@ -236,7 +238,6 @@ table {
 .formulario-comentarios {
   width: 95%;
   margin-top: 20px;
-  padding-top: 5px;
   padding: 10px;
   border-radius: 15px;
   background: radial-gradient(#f7e6d9, #F4D2B8); }
@@ -263,19 +264,30 @@ table {
     border-radius: 15px;
     background: #71B7A6; }
 
-#formularioContacto .input-group {
+.contacto__formulario {
+  width: 95%;
+  border-radius: 15px;
+  padding: 10px;
+  background: radial-gradient(#f7e6d9, #F4D2B8); }
+
+.contacto__saludo {
+  color: gray; }
+
+.contacto__input {
   margin: 15px 0;
-  border-radius: 10px;
+  border-radius: 15px;
   z-index: 0; }
-  #formularioContacto .input-group .nombre {
+  .contacto__input .nombre {
     margin: 0 1px; }
-  #formularioContacto .input-group textarea {
+  .contacto__input textarea {
     min-height: 100px; }
 
-#formularioContacto .input-group-text {
+.contacto__etiqueta {
+  border-radius: 15px;
   background: #71B7A6; }
 
-#formularioContacto .form-control {
+.contacto__campo {
+  border-radius: 15px;
   background: #EDE6D9; }
 
 #acercaDeMi {

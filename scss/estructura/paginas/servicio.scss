@@ -1,34 +1,46 @@
-table{
-    width:95%;
-    color:$letra;
-    border:2px solid gray;
-    border-bottom:2px solid gray;
-    margin-bottom:15px;
-    .eje{
-        font-weight:bold;
+.servicio{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    &__card{
+        margin:15px;
+        width:95%;
+        padding:10px;
+        border-radius: 15px;
+        background: radial-gradient($header-abajo,$header-arriba);
     }
-    td{
-        border:1px solid gray;
+    &__subtitulo{
+        text-align: center;
     }
-}
-#carouselServicio{
-    width:90%;
-    .carousel-inner{
+    &__lista{
+        color:$letra;
+    }
+    &__carousel{
+        width:90%;
+    }
+    &__inner{
         max-height:300px;
     }
-}
-@media(min-width:600px){
-   #carouselServicio{
-       .carousel-inner{
-           max-height: 400px;
+    @media(min-width:600px){
+       .servicio{
+           &__carousel{
+               width: 550px;
+           }
+           &__inner{
+               max-height: 400px;
+           }
        }
-   }
-}
-@media(min-width:992px){
-    #carouselServicio{
-        width:700px;
-        .carousel-inner{
-            max-height: 600px;
+    }
+    @media(min-width:992px){
+        .servicio{
+            &__carousel{
+                width:850px;
+            }
+            &__inner{
+                max-height: 600px;
+            }
         }
     }
 }

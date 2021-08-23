@@ -45,48 +45,35 @@
 				
 
 		<!--Inicio contenido Principal-->
-		<main>
-			<div class="titulo">
-				<h1>Servicio</h1>
+		<main class="servicio">
+			<h1 class="servicio__titulo">Servicio</h1>
+			<div class=servicio__card>
+				<h2 class="servicio__subtitulo">Piedras calientes</h2>
+				<p class="servicio__descripcion">El masaje con piedras calientes o terapia geotermal combina el masaje terapéutico tradicional con la aplicación sobre la piel de piedras, ubicando éstas en los puntos en los que se encuentran dichos chakras, consiguiendo así que la energía fluya adecuadamente y, por consiguiente, aliviando nuestro malestar.</p>
+				<ol class="servicio__lista">
+					<li class="servicio__item">Es una gran solución para combatir el estrés.</li>
+					<li class="servicio__item">Al disminuir el estrés, mejora la calidad de sueño.</li>
+					<li class="servicio__item">Reduce dolores musculares.</li>
+					<li class="servicio__item">Mejora la circulación y el flujo de energía.</li>
+				</ol>
 			</div>
-			<table>
-				<tr class="eje">
-					<td>Masaje</td>
-					<td>Descontracturante</td>
-					<td>Piedras calientes</td>
-				</tr>
-				<tr>
-					<td class="eje">Descripción</td>
-					<td>Es un tratamiento que implica el uso de distintas técnicas de masaje con fines terapéuticos, ayudando a tratar enfermedades, lesiones o dolencias, con una combinación de maniobras técnicas realizadas de forma armoniosa y metódica, que al ser aplicadas con las manos permiten valorar el estado de los tejidos tratados, mejorando la oxigenación y circulación de los mismos.</td>
-					<td>El masaje con piedras calientes o terapia geotermal combina el masaje terapéutico tradicional con la aplicación sobre la piel de piedras, ubicando éstas en los puntos en los que se encuentran dichos chakras, consiguiendo así que la energía fluya adecuadamente y, por consiguiente, aliviando nuestro malestar.</td>
-				</tr>
-				<tr>
-					<td class="eje">Beneficios</td>
-					<td colspan="2"><ol>
-						<li>Reduce el stress y la ansiedad.</li>
-						<li>Mejora tu sistema inmunológico.</li>
-						<li>Activa la circulación  sanguínea y con ello  ayuda  a eliminar toxinas.</li>
-						<li>Alivia  dolores de cabeza  producidos por contracturas cervicales.</li>
-					</ol></td>
-				</tr>
-				<tr>
-					<td class="eje">Duración (aprox.)</td>
-					<td>50 min.</td>
-					<td>1:30 horas.</td>
-				</tr>
-				<tr>
-					<td class="eje">Precio</td>
-					<td>$890</td>
-					<td>$1200</td>
-				</tr>
-			</table>
-			<div id="carouselServicio" class="carousel slide" data-bs-ride="carousel">
+			<div class=servicio__card>
+				<h2 class="servicio__subtitulo">Desconstracturante</h2>
+				<p class="servicio__descripcion">Es un tratamiento que implica el uso de distintas técnicas de masaje con fines terapéuticos, ayudando a tratar enfermedades, lesiones o dolencias, con una combinación de maniobras técnicas realizadas de forma armoniosa y metódica, que al ser aplicadas con las manos permiten valorar el estado de los tejidos tratados, mejorando la oxigenación y circulación de los mismos.</p>
+				<ol class="servicio__lista">
+					<li class="servicio__item">Reduce el stress y la ansiedad.</li>
+					<li class="servicio__item">Mejora tu sistema inmunológico.</li>
+					<li class="servicio__item">Activa la circulación  sanguínea y con ello  ayuda  a eliminar toxinas.</li>
+					<li class="servicio__item">Alivia  dolores de cabeza  producidos por contracturas cervicales.</li>
+				</ol>
+			</div>
+			<div class="carousel slide servicio__carousel" data-bs-ride="carousel">
 			  <div class="carousel-indicators">
 			    <button type="button"  data-bs-target="#carouselServicio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 			    <button type="button" data-bs-target="#carouselServicio" data-bs-slide-to="1" aria-label="Slide 2"></button>
 			    <button type="button" data-bs-target="#carouselServicio" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			  </div>
-			  <div class="carousel-inner">
+			  <div class="carousel-inner servicio__inner">
 			    <div class="carousel-item active">
 			      <img src="img/piedras-calientes.jpg" class="d-block w-100" alt="...">
 			    </div>
